@@ -1,2 +1,2 @@
 # imgwe
-link: httpss://recarcoder.github.io/imgweb/
+link: https://recarcoder.github.io/imgweb/
