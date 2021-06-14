@@ -15,10 +15,9 @@
       href="https://raw.githubusercontent.com/recarcoder/imgweb/main/icon.png">
 
     <title>My Website</title>
-<link rel="stylesheet" href="https://raw.githubusercontent.com/recarcoder/imgweb/main/style.css" type="text/css" >
+
 </head><body>
 	
-<script type="javascript" src="https://raw.githubusercontent.com/recarcoder/imgweb/main/script.js"></script>
 
 
 
@@ -92,12 +91,382 @@
 
     <style>
 
-   
+      @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+        body {
+
+            margin: 0;
+
+            padding: 0;
+
+            display: block;
+
+            background-color: rgba(239,241,241,0.896);
+
+        }
+
+        .main {
+
+            z-index: 0;
+
+            margin-top: 120px;
+
+            background-color: linear-gradient(toleft, red ,blue);
+
+            display: flex;
+
+            justify-content: space-around;
+
+            width: 100%;
+
+            height: auto;
+
+            flex-wrap: wrap;
+
+        }
+
+        .img {
+
+            letter-spacing: 0.5px;
+
+            margin: 10px;
+
+            padding: 10px;
+
+            border: 1.2px solid rgba(200,200,200,0.8);
+
+            height: 250px;
+
+            width: 250px;
+
+            border-radius: 10px;
+
+        }
+
+        .img:hover{
+
+          border: 0;
+
+                 box-shadow: 0 0 1px 1.5px rgba(64,235,4,0.471);
+
+        }
+
+        .top {
+
+            z-index: 0;
+
+            margin: 0;
+
+            padding: 0;
+
+            position: fixed;
+
+            top: 0;
+
+            left: 0;
+
+            height: 100px;
+
+            width: 100%;
+
+            border-bottom: 1px solid rgb(200,200,200);
+
+            background-color: rgba(239,241,241,0.596);
+
+        }
+
+	   .par{	   	margin: 0 auto;
+
+	   	padding: 0;
+
+	   	background-color: black;
+
+	   	width: 100%;
+
+	   	color: white;
+
+	   	height: auto;
+
+	   }
+
+		.par>h2{
+
+		text-align: center;	
+
+		}
+
+		    
+
+	    
+
+	    #tra{
+
+		z-index: 2;
+
+		margin: 0;padding: 0;
+
+		position: fixed;
+
+		top: 100px;left: 0;
+
+		background-color:lightgrey;
+
+		height:4px;
+
+		width: 100vw;
+
+	}
+
+#train{
+
+	margin: 0;padding: 0;
+
+	border-radius: 2px;
+
+	position: fixed;
+
+	top: 100px;left: 0;
+
+	background-color:blue;
+
+	height: 4px;
+
+	width: 1vw;
+
+	border: 0;
+
+}
+
+        .foot {
+
+            z-index: 0;
+
+            font-size: 1.2rem;
+
+            text-align: center;
+
+            margin: 0 auto;
+
+            margin-top: 100px;
+
+        }
+
+        
+
+        a{
+
+            text-decoration: underline;
+
+            color: rgba(150,150,150,0.8);
+
+        }
+
+        .head {
+
+            margin: 0;
+
+            margin-right: 20px;
+
+            margin-top: 2px;
+
+            float: right;
+
+            padding: 0;
+
+            display: inline-block;
+
+            font-family: 'Pacifico', cursive;
+
+            font-size: 3rem;
+
+            color: rgba(100,100,100,0.5);
+
+            text-decoration: underline;
+
+        }
+
+	     .topimg{
+
+         	border-radius: 50%;
+
+	   	float: right;
+
+	   	margin: 10px;
+
+	   	height: 80px;
+
+	   	width:80px;
+
+	   }
+
+        .svg {
+
+            margin-bottom: 5px;
+
+            margin-right: 5px;
+
+            margin-left: 10px;
+
+            margin-top: 20px;
+
+        }
+
+        .total {
+
+            background-color: rgba(213,213,213,0.9);
+
+            transition: ease 1s;
+
+            display: none;
+
+            position: fixed;
+
+            top: 0;
+
+            left: 0;
+
+            height: 100vh;
+
+            width: 100vw;
+
+            z-index: 2;
+
+            margin: 0;
+
+            padding: 0;
+
+        }
+
+        .svg:hover {
+
+            transition: ease;
+
+            animation-name: rot;
+
+            animation-direction: 0.2s;
+
+            animation-duration: 1.2s;
+
+            animation-iteration-count: 1;
+
+        }
+
+        @keyframes rot {
+
+            0% {
+
+                transform: rotate(0deg);
+
+            }
+
+            100% {
+
+                transform: rotate(360deg);
+
+            }
+
+        }
+
+        .sidenav {
+
+            position: fixed;
+
+            top: 50%;
+
+            left: 50%;
+
+            transform: translate(-50%,-50%);
+
+            display: grid;
+
+            width: 200px;
+
+            height: auto;
+
+            display: none;
+
+        }
+
+        .sidenav>.sd {
+
+            text-align: center;
+
+            border-bottom: 1px solid black;
+
+            font-size: 1.2rem;
+
+            text-decoration: none;
+
+            padding: 20px;
+
+            color: rgb(153,153,153);
+
+        }
+
+        .sidenav>.sd:hover {
+
+            color: rgba(32,177,254,0.894);
+
+            border-bottom: 1px solid rgba(47,180,55,0.835);
+
+        }
+
+        #wrg {
+
+            display: none;
+
+            color: rgba(249,73,73,0.934);
+
+            border: 0;
+
+            text-decoration: none;
+
+            position: fixed;
+
+            top: 10%;
+
+            left: 50%;
+
+            transform: translate(-50%,-10%);
+
+            font-size: 5rem;
+
+            margin: 0;
+
+            padding: 0;
+
+        }
 
   </style>
 
   <script>
+function sid() {
 
+            document.querySelector('.sidenav').style.display = 'grid';
+
+            document.querySelector('#wrg').style.display = 'grid';
+
+            document.querySelector('.total').style.display = 'grid';
+
+        }
+
+        function remove() {
+
+            document.querySelector('.sidenav').style.display = 'none';
+
+            document.querySelector('#wrg').style.display = 'none';
+
+            document.querySelector('.total').style.display = 'none';
+
+        }
+
+      window.addEventListener('scroll',function got(){
+
+		var	height = 	document.body.offsetHeight-650;
+
+	document.getElementById('train').style.width = 	Math.floor(((window.scrollY*100)/height))+'%';
+
+		});
     
 
   </script>
