@@ -94,9 +94,9 @@
       @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
         body {
-
+            filter:opacity(0);
             margin: 0;
-
+            animation:anim 1s linear 0.01s 1;
             padding: 0;
 
             display: block;
@@ -104,6 +104,10 @@
             background-color: rgba(239,241,241,0.896);
 
         }
+	    @keyframes anim{
+	    0%{filter:opacity(0);}
+		100%{filter:opacity(1);}
+	    }
 
         .main {
 
