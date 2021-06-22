@@ -190,13 +190,18 @@
 
             height: 100px;
 
-            width: 100%;
+            width: 100%;filter:opacity(1);animation:opac 1s linear 0.01s 1;
+		
 
             border-bottom: 1px solid rgb(200,200,200);
 
             background-color: rgba(239,241,241,0.896);
 
         }
+	    @keframes opac{
+	    0%{filter:opacity(0);}
+		    100%{filter:opacity(1);}
+	    }
 
 	   .par{	   	margin: 0 auto;
 
